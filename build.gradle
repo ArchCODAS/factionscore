@@ -1,0 +1,37 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+    id 'java'
+}
+
+group = 'com.fyzermc'
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://oss.sonatype.org/content/groups/public/' }
+    maven { url = 'https://repo.dmulloy2.net/repository/public/' }
+    maven { url = 'https://repo.lucko.me/' }
+}
+
+dependencies {
+    compileOnly fileTree('libs')
+
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.30'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    implementation 'org.greenrobot:eventbus-java:3.3.1'
+
+    compileOnly 'com.comphenix.protocol:ProtocolLib:5.1.0'
+
+    compileOnly 'net.luckperms:api:5.4'
+}
+
+shadowJar {
+    archiveBaseName.set('FactionsCore')
+}
+
+compileJava {
+    options.encoding('UTF-8')
+}

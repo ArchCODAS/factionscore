@@ -1,0 +1,58 @@
+name: FactionsCore
+version: 1.3.0
+main: com.fyzermc.factionscore.FactionsCorePlugin
+author: uArch
+load: POSTWORLD
+depend:
+  - Factions
+  - CombatLog
+  - MassiveCore
+  - helper
+  - ProtocolLib
+  - Vault
+
+commands:
+  arena:
+    aliases: []
+  back:
+    aliases: []
+  chat:
+    aliases: []
+  givecustomitem:
+    aliases: [giveitem]
+  global:
+    aliases: [g]
+  god:
+    aliases: []
+  kickall:
+    aliases: []
+  fps:
+    aliases: []
+  hide:
+    aliases: [esconder]
+  reply:
+    aliases: [r]
+  show:
+    aliases: [mostrar]
+  spawn:
+    aliases: []
+  shop:
+    aliases: [loja]
+  tax:
+    aliases: [taxar]
+  removealtars:
+    aliases: []
+  tell:
+    aliases: []
+  tpcancel:
+    aliases: [tpacancel, tpacancelar]
+  tpaccept:
+    aliases: [ tpaaceitar ]
+  tpa:
+    aliases: []
+  tpdeny:
+    aliases: [tpanegar]
+  vanish:
+    aliases: [v]
+  compactar:
+    aliases: [compact]
